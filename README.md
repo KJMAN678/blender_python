@@ -1,3 +1,7 @@
+## Blender + Python
+#### Blender の Script で Pythonコードを実行できる
+<img src="images/image.png" width="1000px">
+
 - [Blender ダウンロードページ](https://www.blender.org/download/)
 - [Blender で Python スクリプトを実行](https://www.kkaneko.jp/db/cg/bpy.html)
 - [Blender API (bpy) リファレンス(英語)](https://docs.blender.org/api/current/index.html)
@@ -28,4 +32,4 @@ bpy.ops.mesh.primitive_cube_add()
 bpy.ops.transform.resize(value=(depth, width, height))
 ```
 
-<img src="images/image.png" width="1000px">
+
