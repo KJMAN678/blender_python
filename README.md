@@ -31,7 +31,7 @@ params_cone = {
 "depth": 5.0, # 高さ
 "rotation": rotation_cone, # 回転
 } 
-#bpy.ops.mesh.primitive_cone_add(**params_cone)
+bpy.ops.mesh.primitive_cone_add(**params_cone)
 
 
 # 立方体 https://docs.blender.org/api/current/bpy.ops.mesh.html#bpy.ops.mesh.primitive_cube_add
@@ -47,7 +47,7 @@ params_cube = {
 "rotation": rotation_cube
 }
 
-#bpy.ops.mesh.primitive_cube_add(**params_cube)
+bpy.ops.mesh.primitive_cube_add(**params_cube)
 
 
 # 円柱 https://docs.blender.org/api/current/bpy.ops.mesh.html#bpy.ops.mesh.primitive_cylinder_add
@@ -65,7 +65,7 @@ params_cylinder = {
 "rotation": rotation_cylinder, # 回転
 }
 
-#bpy.ops.mesh.primitive_cylinder_add(**params__cylinder)
+bpy.ops.mesh.primitive_cylinder_add(**params__cylinder)
 
 
 # 球 https://docs.blender.org/api/current/bpy.ops.mesh.html#bpy.ops.mesh.primitive_uv_sphere_add
@@ -83,7 +83,7 @@ params_sphere = {
 "rotation": rotation_sphere, # 回転
 }
 
-#bpy.ops.mesh.primitive_uv_sphere_add(**params_sphere)
+bpy.ops.mesh.primitive_uv_sphere_add(**params_sphere)
 
 
 # 直方体 https://docs.blender.org/api/current/bpy.ops.transform.html#bpy.ops.transform.resize
