@@ -19,16 +19,23 @@ import math
 # 円錐 https://docs.blender.org/api/current/bpy.ops.mesh.html#bpy.ops.mesh.primitive_cone_add
 
 # 回転
-x_cone = 0.0
-y_cone = 90.0
-z_cone = 0.0
-rotation_cone = mathutils.Euler((math.radians(x_cone), math.radians(y_cone), math.radians(z_cone)), 'XYZ')
+x_rotation_cone = 0.0
+y_rotation_cone = -90.0
+z_rotation_cone = 0.0
+rotation_cone = mathutils.Euler((math.radians(x_rotation_cone), math.radians(y_rotation_cone), math.radians(z_rotation_cone)), 'XYZ')
+
+# ichi
+x_location_cone = 0.5
+y_location_cone = 0.0
+z_location_cone = 0.0
+location_cone = mathutils.Vector((x_location_cone, y_location_cone, z_location_cone))
 
 params_cone = {
 "vertices": 32, # 多いほど丸みを帯びる
-"radius1": 5.0, # 底面の半径
+"radius1": 1.0, # 底面の半径
 "radius2": 0.0, # 頂点の半径
-"depth": 5.0, # 高さ
+"depth": 1.0, # 高さ
+"location": location_cone,
 "rotation": rotation_cone, # 回転
 } 
 bpy.ops.mesh.primitive_cone_add(**params_cone)
