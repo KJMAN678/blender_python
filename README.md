@@ -24,7 +24,7 @@ y_rotation_cone = -90.0
 z_rotation_cone = 0.0
 rotation_cone = mathutils.Euler((math.radians(x_rotation_cone), math.radians(y_rotation_cone), math.radians(z_rotation_cone)), 'XYZ')
 
-# ichi
+# 位置
 x_location_cone = 0.5
 y_location_cone = 0.0
 z_location_cone = 0.0
