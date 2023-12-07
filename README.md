@@ -12,6 +12,8 @@
 - [Blender Macでコンソール出力を表示させる](https://www.patec-tech.jp/process/?p=3762)
 
 ```python
+import bpy
+
 # 円錐 https://docs.blender.org/api/current/bpy.ops.mesh.html#bpy.ops.mesh.primitive_cone_add
 bpy.ops.mesh.primitive_cone_add()
 
