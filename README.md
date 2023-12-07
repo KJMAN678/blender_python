@@ -35,7 +35,7 @@ params_cone = {
 "radius1": 1.0, # 底面の半径
 "radius2": 0.0, # 頂点の半径
 "depth": 1.0, # 高さ
-"location": location_cone,
+"location": location_cone, # 位置
 "rotation": rotation_cone, # 回転
 } 
 bpy.ops.mesh.primitive_cone_add(**params_cone)
