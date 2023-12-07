@@ -62,18 +62,24 @@ bpy.ops.mesh.primitive_cube_add(**params_cube)
 # 回転
 x_cylinder = 0.0
 y_cylinder = 0.0
-z_cylinder = 45.0
+z_cylinder = 0.0
 rotation_cylinder = mathutils.Euler((math.radians(x_cylinder), math.radians(y_cylinder), math.radians(z_cylinder)), 'XYZ')
+
+# 位置
+x_location_cylinder = 0.0
+y_location_cylinder = 0.0
+z_location_cylinder = 0.0
+location_cylinder = mathutils.Vector((x_location_cylinder, y_location_cylinder, z_location_cylinder))
 
 params_cylinder = {
 "vertices": 32, # 多いほど丸みを帯びる
-"radius": 5.0, # 底面の半径
+"radius": 2.0, # 底面の半径
 "depth": 5.0, # 高さ
+"location": location_cylinder, # 位置
 "rotation": rotation_cylinder, # 回転
 }
 
-bpy.ops.mesh.primitive_cylinder_add(**params__cylinder)
-
+bpy.ops.mesh.primitive_cylinder_add(**params_cylinder)
 
 # 球 https://docs.blender.org/api/current/bpy.ops.mesh.html#bpy.ops.mesh.primitive_uv_sphere_add
 
