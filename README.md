@@ -129,4 +129,12 @@ bpy.ops.mesh.primitive_cube_add(**params_cuboid)
 bpy.ops.transform.resize(value=(depth_cuboid, width_cuboid, height_cuboid))
 ```
 
+```python
+# オブジェクトの名前の変更 円錐の場合
+bpy.data.objects["円錐"].name = "任意の名前"
+
+# 選択したオブジェクトの名前を変更
+for obj in bpy.context.selected_objects:
+    obj.name = "任意の名前"
+```
 
