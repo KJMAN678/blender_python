@@ -44,15 +44,31 @@ bpy.ops.mesh.primitive_cone_add(**params_cone)
 # 立方体 https://docs.blender.org/api/current/bpy.ops.mesh.html#bpy.ops.mesh.primitive_cube_add
 
 # 回転
-x_cube = 0.0
-y_cube = 0.0
-z_cube = 45.0
-rotation_cube = mathutils.Euler((math.radians(x_cube), math.radians(y_cube), math.radians(z_cube)), 'XYZ')
+x_rotation_cube = 0.0
+y_rotation_cube = 0.0
+z_rotation_cube = 0.0
+rotation_cube = mathutils.Euler(
+    (
+        math.radians(x_rotation_cube),
+        math.radians(y_rotation_cube),
+        math.radians(z_rotation_cube),
+    ),
+    "XYZ",
+)
+
+# 位置
+x_location_cube = 0.0
+y_location_cube = 0.0
+z_location_cube = 0.0
+location_cube = mathutils.Vector(
+    (x_location_cube, y_location_cube, z_location_cube)
+)
 
 params_cube = {
-"size": 4.0, # 1辺の長さ
-"rotation": rotation_cube
-}
+    "size": 1.0,
+    "location": location_cube,
+    "rotation": rotation_cube,
+}  # 1辺の長さ
 
 bpy.ops.mesh.primitive_cube_add(**params_cube)
 
